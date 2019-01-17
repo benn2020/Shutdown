@@ -17,9 +17,12 @@ namespace Shutdown
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e) => cmbtype.SelectedIndex = 2;        //Set the first item in list as selected
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cmbtype.SelectedIndex = 0;        //Set the first item in list as selected
+        }
 
-        string TimeType;
+        string timeType;
         float timeleft;         //Set the time left from the text box
         float secondsleft;      //Time left in seconds
         string option;          //Shutdown arguments
@@ -27,12 +30,49 @@ namespace Shutdown
 
         private void btnshutdown_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        public string ShutdownTime()
+        {
+            timeleft = float.Parse(txttimeleft.Text);
+            timeType = cmbtype.Text.ToLower();
+
+            switch (timeType)
+            {
+                case "seconds":
+                    secondsleft = timeleft;
+                    break;
+                case "minutes":
+                    secondsleft = timeleft * 60;
+                    break;
+                case "hours":
+                    secondsleft = timeleft * 3600;
+                    break;
+            }
+            return secondsleft.ToString();
+        }
+
+        public string ShutdownType(string type)
+        {
+            switch (type.ToLower())
+            {
+                case "shutdown":
+                    option = "/s";
+                    break;
+                case "restart":
+                    option = "/r";
+                    break;
+                case "with options":
+                    option = "/r /o";
+                    break;
+            }
+            return option.ToString();
         }
     }
 }

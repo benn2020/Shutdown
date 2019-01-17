@@ -1,9 +1,0 @@
-B:\Temporary Projects\Shutdoww\bin\Release\Shutdoww.exe.config
-B:\Temporary Projects\Shutdoww\bin\Release\Shutdoww.exe
-B:\Temporary Projects\Shutdoww\bin\Release\Shutdoww.pdb
-B:\Temporary Projects\Shutdoww\obj\Release\Shutdoww.Form1.resources
-B:\Temporary Projects\Shutdoww\obj\Release\Shutdoww.Properties.Resources.resources
-B:\Temporary Projects\Shutdoww\obj\Release\Shutdown.csproj.GenerateResource.Cache
-B:\Temporary Projects\Shutdoww\obj\Release\Shutdown.csproj.CoreCompileInputs.cache
-B:\Temporary Projects\Shutdoww\obj\Release\Shutdoww.exe
-B:\Temporary Projects\Shutdoww\obj\Release\Shutdoww.pdb

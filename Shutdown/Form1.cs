@@ -7,20 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace Shutdown
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            cmbtype.SelectedIndex = 0;        //Set the first item in list as selected
-        }
 
         string timeType;
         float timeleft;         //Set the time left from the text box
@@ -28,11 +21,20 @@ namespace Shutdown
         string option;          //Shutdown arguments
 
 
+        public Form1()
+        {
+            InitializeComponent();
+            cmbtype.SelectedIndex = 2;        //Set the first item in list as selected
+        }
+        
         private void btnshutdown_Click(object sender, EventArgs e)
         {
-            
+            timer1.Enabled = true;
+            lblscheduled.Text = "Shut down Scheduled";
+            Process.Start("shutdown", " /s /t " + ShutdownTime());
         }
 
+        //Button to exit 
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();

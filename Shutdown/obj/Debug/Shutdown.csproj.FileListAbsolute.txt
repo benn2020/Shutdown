@@ -1,0 +1,9 @@
+C:\Users\tille\source\repos\Shutdown\Shutdown\bin\Debug\Shutdown.exe.config
+C:\Users\tille\source\repos\Shutdown\Shutdown\bin\Debug\Shutdown.exe
+C:\Users\tille\source\repos\Shutdown\Shutdown\bin\Debug\Shutdown.pdb
+C:\Users\tille\source\repos\Shutdown\Shutdown\obj\Debug\Shutdown.csprojAssemblyReference.cache
+C:\Users\tille\source\repos\Shutdown\Shutdown\obj\Debug\Shutdown.Properties.Resources.resources
+C:\Users\tille\source\repos\Shutdown\Shutdown\obj\Debug\Shutdown.csproj.GenerateResource.cache
+C:\Users\tille\source\repos\Shutdown\Shutdown\obj\Debug\Shutdown.csproj.CoreCompileInputs.cache
+C:\Users\tille\source\repos\Shutdown\Shutdown\obj\Debug\Shutdown.exe
+C:\Users\tille\source\repos\Shutdown\Shutdown\obj\Debug\Shutdown.pdb

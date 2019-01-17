@@ -62,6 +62,7 @@
             this.btnexit.TabIndex = 22;
             this.btnexit.Text = "Exit";
             this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // lblscheduled
             // 

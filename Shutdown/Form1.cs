@@ -16,5 +16,10 @@ namespace Shutdown
         {
             InitializeComponent();
         }
+
+        private void btnshutdown_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

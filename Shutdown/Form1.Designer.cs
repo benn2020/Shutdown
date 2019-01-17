@@ -136,6 +136,7 @@
             this.btnshutdown.TabIndex = 15;
             this.btnshutdown.Text = "Shutdown";
             this.btnshutdown.UseVisualStyleBackColor = true;
+            this.btnshutdown.Click += new System.EventHandler(this.btnshutdown_Click);
             // 
             // txttimeleft
             // 

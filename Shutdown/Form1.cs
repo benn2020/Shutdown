@@ -31,7 +31,15 @@ namespace Shutdown
         {
             timer1.Enabled = true;
             lblscheduled.Text = "Shut down Scheduled";
-            Process.Start("shutdown", " /s /t " + ShutdownTime());
+            //MessageBox.Show("Fuck you");
+            //string command = "shutdown.exe",  " /s /t " + ShutdownTime());
+            Process command = new Process();
+            //command.startinfo.workingdirectory = "%systemroot%/system32";
+            command.StartInfo.FileName = "shutdown";
+            command.StartInfo.Arguments = "/s /t " + ShutdownTime();
+            MessageBox.Show((command).ToString());
+            command.Start();
+            //MessageBox.Show("Fuck you");
         }
 
         //Button to exit 
